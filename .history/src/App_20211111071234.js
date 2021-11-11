@@ -83,7 +83,7 @@ class App extends Component {
                 <div className="align-center">
                     {this.displayMessages()}
                 </div>
-                <SockJsClient url='http://localhost:8080/websocket-chat/'
+                <SockJsClient url='http://localhost:8088/websocket-chat/'
                               topics={['/topic/user']}
                               onConnect={() => {
                                   console.log("connected");
